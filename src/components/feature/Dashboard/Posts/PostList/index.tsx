@@ -33,7 +33,6 @@ const PostList: FC<Props> = ({ postList, selectedItem }): JSX.Element => {
               >
                 <h2 className="font-bold">{post.title}</h2>
                 <p>{post.body}</p>
-                <p>{post.userId}</p>
               </div>
             ))}
       </div>
