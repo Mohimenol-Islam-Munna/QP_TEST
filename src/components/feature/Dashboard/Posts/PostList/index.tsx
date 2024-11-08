@@ -29,7 +29,7 @@ const PostList: FC<Props> = ({ postList, selectedItem }): JSX.Element => {
             .map((post: any) => (
               <div
                 key={post.id}
-                className="mb-4 p-3 rounded-md border border-green-500"
+                className="mb-4 p-3 rounded-md border border-gray-200"
               >
                 <h2 className="font-bold">{post.title}</h2>
                 <p>{post.body}</p>

@@ -29,7 +29,7 @@ const CommentList: FC<Props> = ({ commentList, selectedItem }): JSX.Element => {
             .map((comment: any) => (
               <div
                 key={comment.id}
-                className="mb-4 p-3 rounded-md border border-green-500"
+                className="mb-4 p-3 rounded-md border border-gray-200"
               >
                 <h2 className="font-bold">{comment.name}</h2>
                 <p>{comment.body}</p>
