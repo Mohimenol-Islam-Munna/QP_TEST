@@ -14,17 +14,17 @@ const MyComponent: FC = (): JSX.Element => {
       targetBtn.style.cssText =
         "background-color: rgb(59,130,246); color: white; cursor: pointer; padding: 2px 10px; border-radius: 5px";
 
-      targetBtn.addEventListener("click", () => {
+      const listener = () => {
         setCount((prevCount) => prevCount + 1);
-      });
+      };
+
+      targetBtn.addEventListener("click", listener);
 
       return () => {
-        targetBtn.removeEventListener("click", () => {});
+        targetBtn.removeEventListener("click", listener);
       };
     }
   }, []);
-
-
 
   return (
     <div>
