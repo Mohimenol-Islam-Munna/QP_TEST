@@ -6,7 +6,7 @@ const DashboardHeader: FC = (): JSX.Element => {
   const { pathname } = useLocation();
 
   return (
-    <div className="w-full py-4 border-b border-gray-200">
+    <div className="w-full py-4">
       <ul className="flex">
         {dashboardMenuList.map((item) => (
           <li
