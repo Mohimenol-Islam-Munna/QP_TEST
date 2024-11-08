@@ -15,10 +15,10 @@ const Header: FC = (): JSX.Element => {
             className={`mx-2 px-3 py-[2px] rounded-sm cursor-pointer ${
               pathname.split("/").length > 2
                 ? `/${pathname.split("/")[1]}` === `${item.outletUrl}`
-                  ? "bg-blue-500"
-                  : "bg-white"
+                  ? "bg-blue-500 text-white"
+                  : "bg-white "
                 : pathname === `${item.url}`
-                ? "bg-blue-500"
+                ? "bg-blue-500 text-white"
                 : "bg-white"
             }`}
           >

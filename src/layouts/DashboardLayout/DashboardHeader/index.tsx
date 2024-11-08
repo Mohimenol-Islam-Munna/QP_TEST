@@ -12,7 +12,9 @@ const DashboardHeader: FC = (): JSX.Element => {
           <li
             key={item.id}
             className={`mx-2 px-3 py-[2px] rounded-sm cursor-pointer ${
-              pathname.split("/")[2] === `${item.url}` ? "bg-blue-500" : ""
+              pathname.split("/")[2] === `${item.url}`
+                ? "bg-blue-500 text-white"
+                : ""
             }`}
           >
             <Link to={item.url}>{item.name}</Link>
