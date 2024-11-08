@@ -9,7 +9,6 @@ type Props = {
 const CommentList: FC<Props> = ({ commentList, selectedItem }): JSX.Element => {
   const { isLoading, data, error } = commentList;
 
-
   return (
     <div className="mt-8 p-3">
       <div>
@@ -34,7 +33,6 @@ const CommentList: FC<Props> = ({ commentList, selectedItem }): JSX.Element => {
               >
                 <h2 className="font-bold">{comment.name}</h2>
                 <p>{comment.body}</p>
-                <p>{comment.postId}</p>
               </div>
             ))}
       </div>
